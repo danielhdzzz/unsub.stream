@@ -45,7 +45,45 @@ export async function tryLocalData() {
   }
 }
 
-function processData(libData, playlistFiles, wrappedFiles = []) {
+export async function loadSampleData() {
+  $.uploadScreen.style.display = "none";
+  $.loading.classList.remove("hidden");
+  const noCache = { cache: "no-store" };
+  try {
+    const res = await fetch("sample/YourLibrary.json", noCache);
+    if (!res.ok) throw new Error("not found");
+    const libData = await res.json();
+
+    const playlistFiles = [];
+    for (let i = 1; i <= 20; i++) {
+      try {
+        const pr = await fetch("sample/Playlist" + i + ".json", noCache);
+        if (!pr.ok) break;
+        playlistFiles.push(await pr.json());
+      } catch {
+        break;
+      }
+    }
+
+    const wrappedFiles = [];
+    for (let y = 2016; y <= 2030; y++) {
+      try {
+        const wr = await fetch("sample/Wrapped" + y + ".json", noCache);
+        if (!wr.ok) continue;
+        wrappedFiles.push({ name: "Wrapped" + y + ".json", data: await wr.json() });
+      } catch {
+        continue;
+      }
+    }
+
+    processData(libData, playlistFiles, wrappedFiles, { skipCache: true });
+  } catch {
+    $.loading.classList.add("hidden");
+    $.uploadScreen.style.display = "flex";
+  }
+}
+
+function processData(libData, playlistFiles, wrappedFiles = [], { skipCache = false } = {}) {
   state.library = libData;
 
   const allPlaylists = [];
@@ -90,7 +128,7 @@ function processData(libData, playlistFiles, wrappedFiles = []) {
 
   renderSidebar("");
   showAllPlaylistTracks();
-  cacheData(libData, playlistFiles, wrappedFiles);
+  if (!skipCache) cacheData(libData, playlistFiles, wrappedFiles);
 }
 
 // ── Index Building (deduplicated, respects hideLocalTracks) ──
@@ -246,10 +284,11 @@ function normalizePlaylistTracks(items) {
         const parts = item.localTrack.uri
           .replace("spotify:local:", "")
           .split(":");
+        const dec = (s) => decodeURIComponent((s || "").replace(/\+/g, " "));
         return {
-          name: decodeURIComponent(parts[2] || "Unknown"),
-          artist: decodeURIComponent(parts[0] || "Unknown"),
-          album: decodeURIComponent(parts[1] || ""),
+          name: dec(parts[2]) || "Unknown",
+          artist: dec(parts[0]) || "Unknown",
+          album: dec(parts[1]),
           uri: null,
           date: item.addedDate || "",
           local: true,
