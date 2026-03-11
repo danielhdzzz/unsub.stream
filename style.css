@@ -752,6 +752,22 @@ body {
   display: none;
 }
 
+#sample-btn {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-dim);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+#sample-btn:hover {
+  color: var(--accent);
+}
+
 /* ── Stats View ── */
 #stats-view {
   flex: 1;
@@ -1446,6 +1462,9 @@ body {
 }
 #upload-screen > :nth-child(6) {
   animation-delay: 0.12s;
+}
+#upload-screen > :nth-child(7) {
+  animation-delay: 0.16s;
 }
 
 #upload-screen .footer-links {

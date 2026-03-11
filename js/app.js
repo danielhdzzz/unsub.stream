@@ -1,4 +1,4 @@
-import { initData, tryLocalData, buildIndexes } from "./data.js";
+import { initData, tryLocalData, buildIndexes, loadSampleData } from "./data.js";
 import { initRender, renderSidebar, renderTrackList, renderCatalogList, renderVisibleRows, renderVisibleCatalogRows, updateSortHeaders } from "./render.js";
 import { computeStats, renderStatsPage } from "./stats.js";
 import { renderWrappedPage } from "./wrapped.js";
@@ -819,6 +819,11 @@ document.querySelectorAll(".export-all-txt-btn").forEach((btn) =>
 // ── Mobile overlay ──
 document.getElementById("mobile-dismiss").addEventListener("click", () => {
   document.getElementById("mobile-overlay").classList.add("dismissed");
+});
+
+// ── Sample Library ──
+document.getElementById("sample-btn").addEventListener("click", () => {
+  loadSampleData();
 });
 
 // ── Init ──
