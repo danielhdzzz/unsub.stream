@@ -21,7 +21,7 @@ You can also clone the repo and place your exported JSON files into a `data/` fo
 
 ```
 git clone <repo-url>
-cd spotify-library-browser
+cd unsub.stream
 mkdir data
 cp ~/Downloads/my_spotify_data/*.json data/
 python3 -m http.server 8888

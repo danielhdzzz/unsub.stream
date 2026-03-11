@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://danielhdzzz.github.io/spotify-data-view/sitemap.xml
+Sitemap: https://danielhdzzz.github.io/unsub.stream/sitemap.xml
