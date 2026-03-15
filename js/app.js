@@ -5,6 +5,7 @@ import { renderWrappedPage } from "./wrapped.js";
 import { loadSettings, saveSettings, getSettings } from "./settings.js";
 import { clearCachedData } from "./cache.js";
 import { closePlayer } from "./player.js";
+import { initLastFm, isLinked, getAuthUrl, unlinkLastFm } from "./lastfm.js";
 
 // ── Constants ──
 export const ROW_H = 32;
@@ -78,6 +79,7 @@ export const $ = {
   viewList: document.getElementById("view-list"),
   viewArt: document.getElementById("view-art"),
   linkSpotifyToggle: document.getElementById("link-spotify-toggle"),
+  lastfmBtn: document.getElementById("lastfm-btn"),
 };
 
 // ── Theme ──
@@ -599,6 +601,27 @@ $.linkSpotifyToggle.addEventListener("change", () => {
     else if (state.filteredTracks.length) renderTrackList();
   }
 });
+
+// ── Last.fm ──
+function updateLastfmUI() {
+  if (isLinked()) {
+    $.lastfmBtn.textContent = "Unlink (" + getSettings().lastfmUsername + ")";
+  } else {
+    $.lastfmBtn.textContent = "Link Last.fm";
+  }
+}
+
+$.lastfmBtn.addEventListener("click", async () => {
+  if (isLinked()) {
+    unlinkLastFm();
+    updateLastfmUI();
+  } else {
+    const url = await getAuthUrl(location.origin + location.pathname);
+    location.href = url;
+  }
+});
+
+initLastFm().then(() => updateLastfmUI());
 
 function setViewMode(showArt) {
   const s = getSettings();

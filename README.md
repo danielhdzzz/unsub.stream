@@ -1,6 +1,6 @@
 # unsub.stream
 
-Browse & explore your exported Spotify data. Zero dependencies, pure HTML/CSS/JS — nothing to install, nothing to build. All processing happens in your browser — your data never leaves your machine.
+Browse & explore your exported Spotify data. No account, no sign-up — just drop your files. Zero dependencies, pure HTML/CSS/JS — nothing to install, nothing to build. All processing happens in your browser — your data never leaves your machine.
 
 ## Getting Your Data
 
@@ -41,8 +41,9 @@ Then open http://localhost:8888.
 - **Stats** — library overview with unique track/artist/album counts, top artists, top albums, timeline of tracks added per month, and new artist discoveries
 - **Wrapped** — Support for Wrapped 2025 to see your year in review: top tracks, listening highlights, notable days, artist race, and more (support for other years coming soon)
 - **Export** — export individual playlists or your entire library as TXT (plain text, one track per line) or CSV (compatible with Soundiiz, TuneMyMusic, and other transfer tools)
+- **Last.fm Scrobbling** — optionally link your Last.fm account to scrobble tracks as you listen via the YouTube player. No account required to use the app — this is purely opt-in
 - **Settings** — hide local tracks (stored files not on Spotify) from all views and stats; persisted in localStorage
-- **Privacy** — no data collection, no cookies, no analytics, no servers
+- **Privacy** — no account, no sign-up, no data collection, no cookies, no analytics
 
 ## Keyboard Shortcuts
 

@@ -1,7 +1,7 @@
 // ── Settings (localStorage persistence) ──
 
 const STORAGE_KEY = "settings";
-const DEFAULTS = { hideLocalTracks: false, theme: "system", showAlbumArt: true, linkToSpotify: false };
+const DEFAULTS = { hideLocalTracks: false, theme: "system", showAlbumArt: true, linkToSpotify: false, lastfmSessionKey: "", lastfmUsername: "" };
 
 let current = null;
 

@@ -219,6 +219,10 @@
           <input type="checkbox" id="link-spotify-toggle" />
           <span>Link tracks to Spotify</span>
         </label>
+        <div class="lastfm-row">
+          <span class="lastfm-label">Last.fm</span>
+          <button id="lastfm-btn" class="overlay-btn">Link Last.fm</button>
+        </div>
         <button id="clear-cache-btn" class="overlay-btn">
           Clear cached data
         </button>
@@ -232,10 +236,10 @@
           <button class="overlay-close">&times;</button>
         </div>
         <div class="overlay-body">
-          <p>This app runs entirely in your browser.</p>
           <p>
-            No data is collected. No cookies are used. No analytics, no
-            tracking, no servers.
+            This app runs entirely in your browser. No account or sign-up
+            needed. No data is collected, no cookies, no analytics, no
+            tracking.
           </p>
           <p>
             Your uploaded data is cached in your browser so the app loads
@@ -243,11 +247,17 @@
             be cleared from Settings.
           </p>
           <p>
-            When you use the play button, only the artist name and track title
-            are sent to YouTube to find a match; no personal identifiers, no
-            library data, nothing else. Album art is fetched from Spotify using
-            only the track title and artist name. Neither request is linked to
-            your account or identity in any way.
+            If you use the play button, the artist name and track title are
+            sent to YouTube to find a match. Album art is fetched from Spotify
+            using only the track title and artist name. Neither request is
+            linked to your identity in any way. If you don't use the player,
+            nothing leaves your browser.
+          </p>
+          <p>
+            Last.fm scrobbling is also optional. If you choose to link your
+            Last.fm account, track name, artist, and album are sent to Last.fm
+            when you listen. No other data is shared. You can unlink at any
+            time from Settings.
           </p>
         </div>
       </div>
