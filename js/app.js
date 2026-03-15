@@ -75,7 +75,8 @@ export const $ = {
   exportConfirmBtn: document.getElementById("export-confirm-btn"),
   playerOverlay: document.getElementById("player-overlay"),
   albumArtToggle: document.getElementById("album-art-toggle"),
-  viewToggle: document.getElementById("view-toggle"),
+  viewList: document.getElementById("view-list"),
+  viewArt: document.getElementById("view-art"),
   linkSpotifyToggle: document.getElementById("link-spotify-toggle"),
 };
 
@@ -528,7 +529,8 @@ wireOverlay($.playerOverlay, () => closePlayer());
 export function applyAlbumArt() {
   const on = getSettings().showAlbumArt;
   TRACK_ROW_H = on ? 64 : 32;
-  $.viewToggle.textContent = on ? "\u25A1" : "\u2630";
+  $.viewList.classList.toggle("active", !on);
+  $.viewArt.classList.toggle("active", on);
   $.albumArtToggle.checked = on;
   // Keep header spacer in sync
   const existing = $.colHeader.querySelector(".col-art");
@@ -539,6 +541,8 @@ export function applyAlbumArt() {
   } else if (!on && existing) {
     existing.remove();
   }
+  const headerPlay = $.colHeader.querySelector(".col-play");
+  if (headerPlay) headerPlay.style.display = on ? "none" : "";
   if (state.library) {
     if (state.catalogMode) renderCatalogList();
     else if (state.filteredTracks.length) renderTrackList();
@@ -596,12 +600,15 @@ $.linkSpotifyToggle.addEventListener("change", () => {
   }
 });
 
-$.viewToggle.addEventListener("click", () => {
+function setViewMode(showArt) {
   const s = getSettings();
-  s.showAlbumArt = !s.showAlbumArt;
+  if (s.showAlbumArt === showArt) return;
+  s.showAlbumArt = showArt;
   saveSettings(s);
   applyAlbumArt();
-});
+}
+$.viewList.addEventListener("click", () => setViewMode(false));
+$.viewArt.addEventListener("click", () => setViewMode(true));
 
 $.hideLocalToggle.addEventListener("change", () => {
   const s = getSettings();

@@ -406,10 +406,11 @@ export function renderVisibleRows() {
       const cachedUrl = getAlbumArt(t, (url) => { img.src = url; img.classList.add("loaded"); });
       if (cachedUrl) { img.src = cachedUrl; img.classList.add("loaded"); }
       artCell.appendChild(img);
+      artCell.appendChild(playBtn);
       row.appendChild(artCell);
+    } else {
+      row.appendChild(playCell);
     }
-
-    row.appendChild(playCell);
     row.appendChild(numSpan);
     row.appendChild(trackSpan);
     row.appendChild(artistSpan);
