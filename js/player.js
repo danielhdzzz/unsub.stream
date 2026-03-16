@@ -1,14 +1,28 @@
 import { sendNowPlaying, sendScrobble } from "./lastfm.js";
+import { getAlbumArt } from "./albumart.js";
 
 const WORKER_URL = "https://youtube-search-proxy.unsub.workers.dev";
 
 const $ = {
-  overlay: document.getElementById("player-overlay"),
+  bar: document.getElementById("player-bar"),
   title: document.getElementById("player-title"),
+  artistAlbum: document.getElementById("player-artist-album"),
+  art: document.getElementById("player-art"),
   embed: document.getElementById("player-embed"),
   loading: document.getElementById("player-loading"),
   error: document.getElementById("player-error"),
   results: document.getElementById("player-results"),
+  progressFill: document.getElementById("player-progress-fill"),
+  seek: document.getElementById("player-seek"),
+  time: document.getElementById("player-time"),
+  playPause: document.getElementById("player-play-pause"),
+  prevBtn: document.getElementById("player-prev"),
+  nextBtn: document.getElementById("player-next"),
+  shuffleBtn: document.getElementById("player-shuffle"),
+  closeBtn: document.getElementById("player-close"),
+  videoToggle: document.getElementById("player-video-toggle"),
+  resultsPanel: document.getElementById("player-results-panel"),
+  resultsClose: document.getElementById("player-results-close"),
 };
 
 // ── YouTube IFrame API ──
@@ -27,7 +41,11 @@ const ytReady = new Promise((resolve) => {
 let ytPlayer = null;
 let activeVideoId = null;
 let onTrackEnded = null;
+let onPrevTrack = null;
 let shuffle = false;
+let progressRAF = null;
+let seeking = false;
+let panelDismissed = false;
 
 // ── Scrobble state ──
 
@@ -80,6 +98,50 @@ function decodeHtml(html) {
   return el.value;
 }
 
+// ── Progress bar ──
+
+function formatTime(s) {
+  if (!s || !isFinite(s)) return "0:00";
+  const m = Math.floor(s / 60);
+  const sec = Math.floor(s % 60);
+  return m + ":" + (sec < 10 ? "0" : "") + sec;
+}
+
+function startProgressLoop() {
+  cancelAnimationFrame(progressRAF);
+  function update() {
+    if (ytPlayer && ytPlayer.getCurrentTime && ytPlayer.getDuration) {
+      const cur = ytPlayer.getCurrentTime();
+      const dur = ytPlayer.getDuration();
+      if (dur > 0 && !seeking) {
+        const pct = (cur / dur) * 100;
+        $.progressFill.style.width = pct + "%";
+        $.seek.value = Math.round((cur / dur) * 1000);
+        $.time.textContent = formatTime(cur) + " / " + formatTime(dur);
+      }
+    }
+    progressRAF = requestAnimationFrame(update);
+  }
+  progressRAF = requestAnimationFrame(update);
+}
+
+function stopProgressLoop() {
+  cancelAnimationFrame(progressRAF);
+  progressRAF = null;
+}
+
+// ── Show / hide bar ──
+
+function showBar() {
+  $.bar.style.display = "";
+  document.documentElement.style.setProperty("--player-h", "calc(7 * var(--unit))");
+}
+
+function hideBar() {
+  $.bar.style.display = "none";
+  document.documentElement.style.setProperty("--player-h", "0px");
+}
+
 // ── YT state change handler ──
 
 function onStateChange(event) {
@@ -87,24 +149,32 @@ function onStateChange(event) {
   switch (event.data) {
     case YT.PlayerState.PLAYING:
       playStartTime = Date.now();
+      $.playPause.innerHTML = "&#x23F8;";
+      startProgressLoop();
       if (!nowPlayingSent && currentTrack) {
         nowPlayingSent = true;
         scrobbleTimestamp = Math.floor(Date.now() / 1000);
         sendNowPlaying(currentTrack);
       }
-      // Grab duration from player if we don't have it
       if (currentDuration <= 0 && ytPlayer && ytPlayer.getDuration) {
         currentDuration = ytPlayer.getDuration();
       }
       break;
     case YT.PlayerState.PAUSED:
+      $.playPause.innerHTML = "&#x25B6;";
+      accumulate();
+      checkScrobble();
+      stopProgressLoop();
+      break;
     case YT.PlayerState.BUFFERING:
       accumulate();
       checkScrobble();
       break;
     case YT.PlayerState.ENDED:
+      $.playPause.innerHTML = "&#x25B6;";
       accumulate();
       checkScrobble();
+      stopProgressLoop();
       if (onTrackEnded) onTrackEnded(currentTrack);
       break;
   }
@@ -113,13 +183,25 @@ function onStateChange(event) {
 // ── Public API ──
 
 export function openPlayer(track) {
-  $.overlay.style.display = "";
-  $.overlay.classList.remove("minimized");
-  $.title.textContent = track.artist + " \u2014 " + track.name;
+  showBar();
+  $.title.textContent = track.name;
+  $.artistAlbum.textContent = track.artist + (track.album ? " \u2014 " + track.album : "");
+  $.art.src = "";
+  $.art.classList.remove("loaded");
+  const cachedUrl = getAlbumArt(track, (url) => { $.art.src = url; $.art.classList.add("loaded"); });
+  if (cachedUrl) { $.art.src = cachedUrl; $.art.classList.add("loaded"); }
   $.embed.innerHTML = "";
   $.results.innerHTML = "";
   $.error.style.display = "none";
   $.loading.style.display = "";
+  $.playPause.innerHTML = "&#x25B6;";
+  $.progressFill.style.width = "0%";
+  $.seek.value = 0;
+  $.time.textContent = "0:00 / 0:00";
+  if (!panelDismissed) {
+    $.resultsPanel.style.display = "";
+    $.videoToggle.classList.add("active");
+  }
 
   // Finalize any previous track
   finalizeCurrentTrack();
@@ -157,28 +239,42 @@ export function openPlayer(track) {
 export function closePlayer() {
   finalizeCurrentTrack();
   destroyPlayer();
+  stopProgressLoop();
   $.results.innerHTML = "";
   $.loading.style.display = "none";
   $.error.style.display = "none";
-  $.overlay.classList.remove("minimized");
   activeVideoId = null;
   currentTrack = null;
+  closeResultsPanel();
+  panelDismissed = false;
+  hideBar();
 }
 
-export function minimizePlayer() {
-  $.overlay.classList.add("minimized");
+export function togglePlayPause() {
+  if (!ytPlayer || !ytPlayer.getPlayerState) return;
+  const YT = window.YT;
+  const s = ytPlayer.getPlayerState();
+  if (s === YT.PlayerState.PLAYING) {
+    ytPlayer.pauseVideo();
+  } else {
+    ytPlayer.playVideo();
+  }
 }
 
-export function restorePlayer() {
-  $.overlay.classList.remove("minimized");
+export function nextTrack() {
+  if (onTrackEnded && currentTrack) onTrackEnded(currentTrack);
 }
 
-export function isMinimized() {
-  return $.overlay.classList.contains("minimized");
+export function previousTrack() {
+  if (onPrevTrack && currentTrack) onPrevTrack(currentTrack);
 }
 
 export function setOnTrackEnded(cb) {
   onTrackEnded = cb;
+}
+
+export function setOnPrevTrack(cb) {
+  onPrevTrack = cb;
 }
 
 export function isShuffle() {
@@ -187,7 +283,22 @@ export function isShuffle() {
 
 export function toggleShuffle() {
   shuffle = !shuffle;
+  $.shuffleBtn.classList.toggle("active", shuffle);
   return shuffle;
+}
+
+export function getCurrentTrack() {
+  return currentTrack;
+}
+
+export function isResultsPanelOpen() {
+  return $.resultsPanel.style.display !== "none";
+}
+
+export function closeResultsPanel() {
+  $.resultsPanel.style.display = "none";
+  $.videoToggle.classList.remove("active");
+  panelDismissed = true;
 }
 
 function finalizeCurrentTrack() {
@@ -225,7 +336,7 @@ function playVideo(videoId) {
   ytReady.then(() => {
     ytPlayer = new YT.Player("yt-player-target", {
       videoId,
-      playerVars: { autoplay: 1, rel: 0 },
+      playerVars: { autoplay: 1, rel: 0, controls: 0 },
       events: { onStateChange },
     });
   });
@@ -281,3 +392,47 @@ function highlightActive(videoId) {
     el.classList.toggle("active", el.dataset.id === videoId);
   }
 }
+
+// ── Wire controls ──
+
+$.playPause.addEventListener("click", togglePlayPause);
+$.nextBtn.addEventListener("click", nextTrack);
+$.prevBtn.addEventListener("click", previousTrack);
+$.shuffleBtn.addEventListener("click", () => toggleShuffle());
+$.closeBtn.addEventListener("click", closePlayer);
+
+$.videoToggle.addEventListener("click", () => {
+  if ($.resultsPanel.style.display === "none") {
+    $.resultsPanel.style.display = "";
+    $.videoToggle.classList.add("active");
+  } else {
+    closeResultsPanel();
+  }
+});
+
+$.resultsClose.addEventListener("click", closeResultsPanel);
+
+// ── Seek ──
+
+$.seek.addEventListener("input", () => {
+  seeking = true;
+  const pct = $.seek.value / 1000;
+  $.progressFill.style.width = (pct * 100) + "%";
+  if (ytPlayer && ytPlayer.getDuration) {
+    const dur = ytPlayer.getDuration();
+    if (dur > 0) {
+      $.time.textContent = formatTime(pct * dur) + " / " + formatTime(dur);
+    }
+  }
+});
+
+$.seek.addEventListener("change", () => {
+  if (ytPlayer && ytPlayer.seekTo && ytPlayer.getDuration) {
+    const dur = ytPlayer.getDuration();
+    if (dur > 0) {
+      ytPlayer.seekTo(($.seek.value / 1000) * dur, true);
+    }
+  }
+  // Delay unsetting so the rAF loop doesn't read stale getCurrentTime()
+  setTimeout(() => { seeking = false; }, 200);
+});

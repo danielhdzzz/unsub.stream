@@ -1,6 +1,6 @@
 import { ROW_H, TRACK_ROW_H, RENDER_BUFFER, GRID_ROW_H, GRID_CARD_W, GRID_GAP, state, $, selectPlaylist, showArtist, showAlbum, toggleStatsMenu, toggleWrappedMenu, updateMainMeta } from "./app.js";
 import { getSettings } from "./settings.js";
-import { openPlayer, setOnTrackEnded, isShuffle } from "./player.js";
+import { openPlayer, setOnTrackEnded, setOnPrevTrack, isShuffle } from "./player.js";
 
 setOnTrackEnded((track) => {
   const list = state.filteredTracks;
@@ -12,6 +12,19 @@ setOnTrackEnded((track) => {
   } else {
     const idx = list.indexOf(track);
     if (idx >= 0 && idx < list.length - 1) openPlayer(list[idx + 1]);
+  }
+});
+
+setOnPrevTrack((track) => {
+  const list = state.filteredTracks;
+  if (!list || list.length < 2) return;
+  if (isShuffle()) {
+    let ri;
+    do { ri = Math.floor(Math.random() * list.length); } while (list[ri] === track);
+    openPlayer(list[ri]);
+  } else {
+    const idx = list.indexOf(track);
+    if (idx > 0) openPlayer(list[idx - 1]);
   }
 });
 import { getAlbumArt } from "./albumart.js";

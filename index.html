@@ -169,6 +169,43 @@
       <div id="stats-content"></div>
     </div>
 
+    <div id="player-bar" style="display: none">
+      <div id="player-progress-wrap">
+        <div id="player-progress-fill"></div>
+        <input type="range" id="player-seek" min="0" max="1000" value="0" />
+      </div>
+      <div id="player-bar-inner">
+        <div id="player-controls">
+          <button id="player-prev" title="Previous">&#x23EE;</button>
+          <button id="player-play-pause" title="Play / Pause">&#x25B6;</button>
+          <button id="player-next" title="Next">&#x23ED;</button>
+          <button id="player-shuffle" title="Shuffle">&#x21C6;</button>
+        </div>
+        <div id="player-track-info">
+          <img id="player-art" alt="" />
+          <div id="player-track-text">
+            <span id="player-title"></span>
+            <span id="player-artist-album"></span>
+          </div>
+          <span id="player-time">0:00 / 0:00</span>
+          <button id="player-video-toggle" title="Show video">&#x25A3;</button>
+          <button id="player-close" title="Close">&times;</button>
+        </div>
+      </div>
+      <div id="player-results-panel" style="display: none">
+        <div id="player-results-header">
+          <span>YouTube Results</span>
+          <button id="player-results-close">&times;</button>
+        </div>
+        <div id="player-yt-container">
+          <div id="player-embed"></div>
+        </div>
+        <div id="player-loading" style="display: none">Searching YouTube...</div>
+        <div id="player-error" style="display: none"></div>
+        <div id="player-results"></div>
+      </div>
+    </div>
+
     <div id="stats-bar" style="display: none">
       <span class="stats-text"></span>
       <button id="settings-btn" class="bar-btn" title="Settings">
@@ -275,25 +312,6 @@
           <button id="export-confirm-btn" class="overlay-action-btn">
             Download
           </button>
-        </div>
-      </div>
-    </div>
-
-    <div id="player-overlay" class="overlay" style="display: none">
-      <div class="overlay-panel player-panel">
-        <div class="overlay-header">
-          <span id="player-title">Playing</span>
-          <div class="player-header-buttons">
-            <button id="player-shuffle" class="overlay-close" title="Shuffle">&#x21C6;</button>
-            <button id="player-minimize" class="overlay-close" title="Minimize">_</button>
-            <button class="overlay-close" title="Close">&times;</button>
-          </div>
-        </div>
-        <div class="overlay-body">
-          <div id="player-embed"></div>
-          <div id="player-loading">Searching YouTube...</div>
-          <div id="player-error" style="display: none"></div>
-          <div id="player-results"></div>
         </div>
       </div>
     </div>

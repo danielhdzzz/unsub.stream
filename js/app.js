@@ -4,7 +4,7 @@ import { computeStats, renderStatsPage } from "./stats.js";
 import { renderWrappedPage } from "./wrapped.js";
 import { loadSettings, saveSettings, getSettings } from "./settings.js";
 import { clearCachedData } from "./cache.js";
-import { closePlayer, minimizePlayer, restorePlayer, isMinimized, toggleShuffle } from "./player.js";
+import { closePlayer, togglePlayPause, isResultsPanelOpen, closeResultsPanel } from "./player.js";
 import { initLastFm, isLinked, getAuthUrl, unlinkLastFm } from "./lastfm.js";
 
 // ── Constants ──
@@ -78,7 +78,6 @@ export const $ = {
   exportOverlay: document.getElementById("export-overlay"),
   exportColumns: document.getElementById("export-columns"),
   exportConfirmBtn: document.getElementById("export-confirm-btn"),
-  playerOverlay: document.getElementById("player-overlay"),
   albumArtToggle: document.getElementById("album-art-toggle"),
   viewList: document.getElementById("view-list"),
   viewArt: document.getElementById("view-art"),
@@ -504,14 +503,14 @@ document.addEventListener("keydown", (e) => {
     $.trackFilter.focus();
     $.trackFilter.select();
   }
+  if (e.key === " " && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+    e.preventDefault();
+    togglePlayPause();
+    return;
+  }
   if (e.key === "Escape") {
-    if ($.playerOverlay.style.display !== "none") {
-      if (isMinimized()) {
-        $.playerOverlay.style.display = "none";
-        closePlayer();
-      } else {
-        minimizePlayer();
-      }
+    if (isResultsPanelOpen()) {
+      closeResultsPanel();
       return;
     }
     const open = [$.settingsOverlay, $.privacyOverlay, $.exportOverlay].find((o) => o.style.display !== "none");
@@ -570,42 +569,7 @@ function wireOverlay(overlay, onClose) {
 wireOverlay($.settingsOverlay);
 wireOverlay($.privacyOverlay);
 wireOverlay($.exportOverlay);
-// Player overlay — custom wiring (minimize instead of close on backdrop/Esc)
-(function wirePlayerOverlay() {
-  const overlay = $.playerOverlay;
-  const panel = overlay.querySelector(".player-panel");
-  const closeBtn = overlay.querySelector("[title='Close']");
-  const minBtn = document.getElementById("player-minimize");
-  const shuffleBtn = document.getElementById("player-shuffle");
-
-  const close = () => {
-    overlay.style.display = "none";
-    closePlayer();
-  };
-
-  closeBtn.addEventListener("click", close);
-
-  minBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    if (isMinimized()) restorePlayer();
-    else minimizePlayer();
-  });
-
-  shuffleBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    shuffleBtn.classList.toggle("active", toggleShuffle());
-  });
-
-  // Backdrop click: minimize if expanded, ignore if minimized
-  overlay.addEventListener("click", (e) => {
-    if (e.target === overlay && !isMinimized()) minimizePlayer();
-  });
-
-  // Click minimized bar to restore
-  panel.addEventListener("click", (e) => {
-    if (isMinimized() && !e.target.closest(".overlay-close")) restorePlayer();
-  });
-})();
+// Player bar controls are self-wired in player.js
 
 // ── Album Art ──
 export function applyAlbumArt() {
