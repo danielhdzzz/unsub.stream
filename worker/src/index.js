@@ -25,16 +25,6 @@ function jsonResponse(data, status, request) {
   });
 }
 
-function parseDuration(iso) {
-  const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
-  if (!m) return "0:00";
-  const h = parseInt(m[1] || "0", 10);
-  const min = parseInt(m[2] || "0", 10);
-  const sec = parseInt(m[3] || "0", 10);
-  const pad = (n) => String(n).padStart(2, "0");
-  return h > 0 ? `${h}:${pad(min)}:${pad(sec)}` : `${min}:${pad(sec)}`;
-}
-
 // ── MD5 (RFC 1321) ──
 
 function md5(string) {
@@ -200,19 +190,6 @@ async function handleSearch(url, env, request, ctx) {
       return jsonResponse({ results: [] }, 200, request);
     }
 
-    const videoIds = items.map((item) => item.id.videoId).join(",");
-    const videosUrl = new URL("https://www.googleapis.com/youtube/v3/videos");
-    videosUrl.searchParams.set("part", "contentDetails");
-    videosUrl.searchParams.set("id", videoIds);
-    videosUrl.searchParams.set("key", apiKey);
-
-    const videosRes = await fetch(videosUrl.toString());
-    const videosData = videosRes.ok ? await videosRes.json() : { items: [] };
-    const durationMap = {};
-    for (const v of videosData.items || []) {
-      durationMap[v.id] = parseDuration(v.contentDetails.duration);
-    }
-
     const results = items.map((item) => ({
       videoId: item.id.videoId,
       title: item.snippet.title,
@@ -220,7 +197,6 @@ async function handleSearch(url, env, request, ctx) {
       thumbnail:
         item.snippet.thumbnails.medium?.url ||
         item.snippet.thumbnails.default?.url,
-      duration: durationMap[item.id.videoId] || "",
     }));
 
     // Store in KV cache (non-blocking)

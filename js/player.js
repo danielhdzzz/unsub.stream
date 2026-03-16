@@ -98,14 +98,6 @@ function checkScrobble() {
   }
 }
 
-function parseDurationToSeconds(str) {
-  if (!str) return 0;
-  const parts = str.split(":").map(Number);
-  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
-  if (parts.length === 2) return parts[0] * 60 + parts[1];
-  return parts[0] || 0;
-}
-
 function decodeHtml(html) {
   const el = document.createElement("textarea");
   el.innerHTML = html;
@@ -232,7 +224,6 @@ export function openPlayer(track) {
       return;
     }
     const first = results[0];
-    currentDuration = parseDurationToSeconds(first.duration);
     playVideo(first.videoId);
     renderResults(results);
   }
@@ -395,19 +386,17 @@ function renderResults(results) {
 
     const meta = document.createElement("div");
     meta.className = "player-result-meta";
-    meta.textContent = r.channel + (r.duration ? " \u00b7 " + r.duration : "");
+    meta.textContent = r.channel;
 
     info.appendChild(title);
     info.appendChild(meta);
     row.appendChild(thumb);
     row.appendChild(info);
 
-    const duration = parseDurationToSeconds(r.duration);
     row.addEventListener("click", () => {
       // Switching to a different result — finalize + reset
       finalizeCurrentTrack();
       resetScrobbleState();
-      currentDuration = duration;
       playVideo(r.videoId);
     });
 
