@@ -1483,6 +1483,10 @@ body {
   margin-bottom: 0;
 }
 
+#player-shuffle.active {
+  color: var(--accent);
+}
+
 #player-loading {
   font-family: var(--mono);
   font-size: 12px;

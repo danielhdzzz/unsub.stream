@@ -26,6 +26,8 @@ const ytReady = new Promise((resolve) => {
 
 let ytPlayer = null;
 let activeVideoId = null;
+let onTrackEnded = null;
+let shuffle = false;
 
 // ── Scrobble state ──
 
@@ -103,6 +105,7 @@ function onStateChange(event) {
     case YT.PlayerState.ENDED:
       accumulate();
       checkScrobble();
+      if (onTrackEnded) onTrackEnded(currentTrack);
       break;
   }
 }
@@ -172,6 +175,19 @@ export function restorePlayer() {
 
 export function isMinimized() {
   return $.overlay.classList.contains("minimized");
+}
+
+export function setOnTrackEnded(cb) {
+  onTrackEnded = cb;
+}
+
+export function isShuffle() {
+  return shuffle;
+}
+
+export function toggleShuffle() {
+  shuffle = !shuffle;
+  return shuffle;
 }
 
 function finalizeCurrentTrack() {

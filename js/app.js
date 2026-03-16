@@ -4,7 +4,7 @@ import { computeStats, renderStatsPage } from "./stats.js";
 import { renderWrappedPage } from "./wrapped.js";
 import { loadSettings, saveSettings, getSettings } from "./settings.js";
 import { clearCachedData } from "./cache.js";
-import { closePlayer, minimizePlayer, restorePlayer, isMinimized } from "./player.js";
+import { closePlayer, minimizePlayer, restorePlayer, isMinimized, toggleShuffle } from "./player.js";
 import { initLastFm, isLinked, getAuthUrl, unlinkLastFm } from "./lastfm.js";
 
 // ── Constants ──
@@ -576,6 +576,7 @@ wireOverlay($.exportOverlay);
   const panel = overlay.querySelector(".player-panel");
   const closeBtn = overlay.querySelector("[title='Close']");
   const minBtn = document.getElementById("player-minimize");
+  const shuffleBtn = document.getElementById("player-shuffle");
 
   const close = () => {
     overlay.style.display = "none";
@@ -588,6 +589,11 @@ wireOverlay($.exportOverlay);
     e.stopPropagation();
     if (isMinimized()) restorePlayer();
     else minimizePlayer();
+  });
+
+  shuffleBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    shuffleBtn.classList.toggle("active", toggleShuffle());
   });
 
   // Backdrop click: minimize if expanded, ignore if minimized
