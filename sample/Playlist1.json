@@ -1,175 +1,802 @@
 {
   "playlists": [
     {
-      "name": "🇯🇲",
-      "lastModifiedDate": "2025-08-10",
+      "name": "👂 Check out soon",
+      "lastModifiedDate": "2025-10-23",
       "collaborators": [],
       "items": [
         {
           "track": {
-            "trackName": "Only Woman D.J. With Degree",
-            "artistName": "Sister Nancy",
-            "albumName": "One Two",
-            "trackUri": "spotify:track:5g7PCls5DNa0CpGchht17L"
+            "trackName": "Occupy",
+            "artistName": "Earth Trax",
+            "albumName": "LP1",
+            "trackUri": "spotify:track:2Hui3dgXyT7ZR4HTnytkbU"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Billy Boyo In The Area",
-            "artistName": "Billy Boyo",
-            "albumName": "Dj Clash - 3 The Hard Way",
-            "trackUri": "spotify:track:3oQ580glnAfJ2FUBJcjP9k"
+            "trackName": "Trust Me",
+            "artistName": "Earth Trax",
+            "albumName": "LP2",
+            "trackUri": "spotify:track:1dbFCmwjzuDHtqEpI32IZA"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Uptown Top Ranking - Remastered 2001",
-            "artistName": "Althea And Donna",
-            "albumName": "Uptown Top Ranking",
-            "trackUri": "spotify:track:34zWZOSpU2V1ab0PiZCcv4"
+            "trackName": "Closer Now",
+            "artistName": "Earth Trax",
+            "albumName": "Closer Now",
+            "trackUri": "spotify:track:7Gjdqr0xvbe8IR2Dc28wTr"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-10"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Bam Bam",
-            "artistName": "Sister Nancy",
-            "albumName": "One Two",
-            "trackUri": "spotify:track:7ixiCZEHWHc8FxaQXQh2P4"
+            "trackName": "Emeline",
+            "artistName": "Facta",
+            "albumName": "Emeline EP",
+            "trackUri": "spotify:track:3DrTOSUMI1zbZ4Mqc3Na4r"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Zim Zim",
-            "artistName": "Billy Boyo",
-            "albumName": "Zim Zim",
-            "trackUri": "spotify:track:3nlolUSAGoTZPu8tETwAxH"
+            "trackName": "Your Place or Mine",
+            "artistName": "Audion",
+            "albumName": "Suckfish",
+            "trackUri": "spotify:track:6L4PnIe5p2JIcSW6657P79"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "I'm Still In Love With You",
-            "artistName": "Marcia Aitken",
-            "albumName": "Reggae Impact",
-            "trackUri": "spotify:track:2Bh2lDeuQfRTOsmvKRfgyQ"
+            "trackName": "Entry Mode",
+            "artistName": "DJ Sports",
+            "albumName": "Modern Species",
+            "trackUri": "spotify:track:3dDZzlHTpCkPD87mXeZMgz"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-10"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Pegion Rock",
-            "artistName": "Sister Nancy",
-            "albumName": "One Two",
-            "trackUri": "spotify:track:7w3O4PVaoMEuruJ6aTLPw0"
+            "trackName": "Parallell",
+            "artistName": "Mikkel Rev",
+            "albumName": "UTE004",
+            "trackUri": "spotify:track:6AcGutw94AHB2gmOqY5ruh"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "One Spliff A Day",
-            "artistName": "Billy Boyo",
-            "albumName": "Hi Grade Ganja Anthems Vol. 2",
-            "trackUri": "spotify:track:2RiqntEZMvmzbQQVodjKPw"
+            "trackName": "Bonus",
+            "artistName": "Shinichi Atobe",
+            "albumName": "Heat",
+            "trackUri": "spotify:track:68ysAOuzlBuXP1nJhRNVd0"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Transport Connection",
-            "artistName": "Sister Nancy",
-            "albumName": "One Two",
-            "trackUri": "spotify:track:2xBszUiaim5OAv534VxFUw"
+            "trackName": "Avenoir",
+            "artistName": "Ada Kaleh",
+            "albumName": "Nodus Tollens",
+            "trackUri": "spotify:track:6df5jMXh2XQnLH8QKRmFfz"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Curly Locks",
-            "artistName": "Junior Byles",
-            "albumName": "A Live Injection: Anthology 1968-1979",
-            "trackUri": "spotify:track:281S3qFau8oV1zdzgmb0XX"
+            "trackName": "Shadow Game",
+            "artistName": "Imre Kiss",
+            "albumName": "Midnight Wave",
+            "trackUri": "spotify:track:5uuPeGHglrFRS83GFY3sDt"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-10"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "One Two",
-            "artistName": "Sister Nancy",
-            "albumName": "One Two",
-            "trackUri": "spotify:track:5MlSIJFlJil5j9WZHtvvQ8"
+            "trackName": "Stoplight",
+            "artistName": "Audion",
+            "albumName": "Stoplight",
+            "trackUri": "spotify:track:5ckfHwEw3QzJ8sRgwvZl73"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-09"
+          "addedDate": "2024-05-07"
         },
         {
           "track": {
-            "trackName": "Blackman's Word - aka Black Man's Pride",
-            "artistName": "Alton Ellis",
-            "albumName": "Mr Soul of Jamaica",
-            "trackUri": "spotify:track:4yiICPDc9s9ONtJZouvKc1"
+            "trackName": "The Dog",
+            "artistName": "Audion",
+            "albumName": "The Pong",
+            "trackUri": "spotify:track:5dxUJhAElpdZAwHpHRCBfk"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2025-08-10"
+          "addedDate": "2024-05-07"
+        },
+        {
+          "track": {
+            "trackName": "Noviex Cult",
+            "artistName": "Marco Zenker",
+            "albumName": "Channel Balance",
+            "trackUri": "spotify:track:3hU7SM1MG7qXNTFdvSSJMU"
+          },
+          "addedDate": "2024-05-07"
+        },
+        {
+          "track": {
+            "trackName": "Citta",
+            "artistName": "Cousin",
+            "albumName": "HomeSoon",
+            "trackUri": "spotify:track:1GdzJ8PWTXlMaa4tGhdtkC"
+          },
+          "addedDate": "2024-05-07"
+        },
+        {
+          "track": {
+            "trackName": "2",
+            "artistName": "Cousin",
+            "albumName": "Numina",
+            "trackUri": "spotify:track:4vLJVJSGIaCjZjl9mkwjc1"
+          },
+          "addedDate": "2024-05-07"
+        },
+        {
+          "track": {
+            "trackName": "Woodland",
+            "artistName": "Nosaj Thing",
+            "albumName": "Continua",
+            "trackUri": "spotify:track:22XPODATm0WnEOi4lEaQXt"
+          },
+          "addedDate": "2024-05-07"
+        },
+        {
+          "track": {
+            "trackName": "Sibling",
+            "artistName": "Jacques Greene",
+            "albumName": "Dawn Chorus",
+            "trackUri": "spotify:track:2d5xkQUyknltIx31sze9MT"
+          },
+          "addedDate": "2024-05-07"
+        },
+        {
+          "track": {
+            "trackName": "Lipsill",
+            "artistName": "Dungen",
+            "albumName": "Ta det lugnt",
+            "trackUri": "spotify:track:16dS3kzEwUeF4Zkj7Tytj3"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Inigradan",
+            "artistName": "Les Filles de Illighadad",
+            "albumName": "Les Filles de Illighadad",
+            "trackUri": "spotify:track:1yoOkwoSLydaiSGT7wEorG"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Eghass Malan",
+            "artistName": "Les Filles de Illighadad",
+            "albumName": "Eghass Malan",
+            "trackUri": "spotify:track:79ewF7kpGeCwdZBuj8I8KN"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Eghass Malan",
+            "artistName": "Les Filles de Illighadad",
+            "albumName": "At Pioneer Works",
+            "trackUri": "spotify:track:5pNE8pon504imgmVfGVsVR"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Tende II - Dauwd & Maryisonacid Mix",
+            "artistName": "Les Filles de Illighadad",
+            "albumName": "African Acid Is the Future - Ambiance II",
+            "trackUri": "spotify:track:4vILiGBGoacSyxkkdpmp7I"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Lagé - African Acid Is The Future Outerlude",
+            "artistName": "Edmony Krater",
+            "albumName": "African Acid Is the Future - Ambiance II",
+            "trackUri": "spotify:track:5bBhj85cLZZBJVEaEmjM0L"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Ahlane Ouassahlane",
+            "artistName": "Ahl Nana",
+            "albumName": "L'Orchestre National Mauritanien",
+            "trackUri": "spotify:track:0DzDBze0m6hWpQHTlaIypm"
+          },
+          "addedDate": "2024-05-08"
+        },
+        {
+          "track": {
+            "trackName": "Bewilderment",
+            "artistName": "Pale Jay",
+            "albumName": "Bewilderment",
+            "trackUri": "spotify:track:5PAS1dyZn7mb7Eq3JM0ejK"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "The Doctor Will See You Now",
+            "artistName": "Jerome Hill",
+            "albumName": "Flow Mechanics",
+            "trackUri": "spotify:track:5Iy9u1Ld2w3u8hyKtKgE25"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Like",
+            "artistName": "Duval Timothy",
+            "albumName": "Help",
+            "trackUri": "spotify:track:6O36tRuXLzl7UyM2bjlbJV"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "No",
+            "artistName": "Duval Timothy",
+            "albumName": "Sen Am",
+            "trackUri": "spotify:track:729XRaKLnvigp0ZsrkGgfl"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Ad Ventures",
+            "artistName": "Shabazz Palaces",
+            "albumName": "The Don Of Diamond Dreams",
+            "trackUri": "spotify:track:65xVPWx759k6bmzRb3B4IQ"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Binoculars",
+            "artistName": "Shabazz Palaces",
+            "albumName": "Robed in Rareness",
+            "trackUri": "spotify:track:09dsdgzdMY18Gu1FizrfSq"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Blastit...",
+            "artistName": "Shabazz Palaces",
+            "albumName": "Shabazz Palaces",
+            "trackUri": "spotify:track:5phseLVwuutyNB37po6uaD"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Gunbeat Falls",
+            "artistName": "Shabazz Palaces",
+            "albumName": "Of Light",
+            "trackUri": "spotify:track:5QgM2jQLJrsdjM2Cho0klo"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Bubbles Buried In This Jungle",
+            "artistName": "Death Grips",
+            "albumName": "Bottomless Pit",
+            "trackUri": "spotify:track:1zw1YeQW9VO4KUgvjevHFa"
+          },
+          "addedDate": "2024-05-09"
+        },
+        {
+          "track": {
+            "trackName": "Spiral",
+            "artistName": "DARKSIDE",
+            "albumName": "Spiral",
+            "trackUri": "spotify:track:4pJinJAIrPKSQTgYWQFQXf"
+          },
+          "addedDate": "2024-05-10"
+        },
+        {
+          "track": {
+            "trackName": "When it hits",
+            "artistName": "Andy Stott",
+            "albumName": "Never The Right Time",
+            "trackUri": "spotify:track:5jyhayj8H2L3OFdVzwUOx6"
+          },
+          "addedDate": "2024-05-10"
+        },
+        {
+          "track": {
+            "trackName": "Wititj (Lightning Snake) Pt. 2 (feat. Jason Guwanbal Gurruwiwi)",
+            "artistName": "Nai Palm",
+            "albumName": "Needle Paw",
+            "trackUri": "spotify:track:1yP3O6nqVOiuwnZDHlU76N"
+          },
+          "addedDate": "2024-05-10"
+        },
+        {
+          "track": {
+            "trackName": "Flight Of The Tiger Lily",
+            "artistName": "Hiatus Kaiyote",
+            "albumName": "Mood Valiant",
+            "trackUri": "spotify:track:22vPyvsF3j3uCWT8t7zlxj"
+          },
+          "addedDate": "2024-05-10"
+        },
+        {
+          "track": {
+            "trackName": "INTERGALACTIC MEDIUM",
+            "artistName": "SUN ATLAS",
+            "albumName": "RETURN TO THE SPIRIT",
+            "trackUri": "spotify:track:7inBDRdEjwaAch2IXllTBx"
+          },
+          "addedDate": "2024-05-10"
+        },
+        {
+          "track": {
+            "trackName": "B3 - Quiet internal rebellions",
+            "artistName": "The Caretaker",
+            "albumName": "Everywhere at the End of Time (Stage 1)",
+            "trackUri": "spotify:track:5b2f6cm0QOqMpko1Sk8JJ2"
+          },
+          "addedDate": "2024-05-14"
+        },
+        {
+          "track": {
+            "trackName": "O Berimbau",
+            "artistName": "Naná Vasconcelos",
+            "albumName": "Saudades",
+            "trackUri": "spotify:track:4veCZuKGvQvrMwFvpusYPs"
+          },
+          "addedDate": "2024-05-14"
+        },
+        {
+          "track": {
+            "trackName": "Sunset Village",
+            "artistName": "The Vernon Spring",
+            "albumName": "A Plane Over Woods",
+            "trackUri": "spotify:track:4hYPPO9UhUZfyplZPySlkX"
+          },
+          "addedDate": "2024-05-16"
+        },
+        {
+          "track": {
+            "trackName": "Go Winter",
+            "artistName": "Made in M",
+            "albumName": "Flux",
+            "trackUri": "spotify:track:6j15P3LebztmzTOg6Zd57G"
+          },
+          "addedDate": "2024-05-17"
+        },
+        {
+          "track": {
+            "trackName": "Michel Strogoff",
+            "artistName": "Hamlet Minassian",
+            "albumName": "Armenian Pop Music",
+            "trackUri": "spotify:track:1Aszr8F5X7Pp9yqXOqmpPn"
+          },
+          "addedDate": "2024-08-30"
+        },
+        {
+          "track": {
+            "trackName": "Coração Sonhador",
+            "artistName": "Joyce Moreno",
+            "albumName": "Natureza",
+            "trackUri": "spotify:track:05witneylUVNXH680Vd3wi"
+          },
+          "addedDate": "2024-08-30"
+        },
+        {
+          "track": {
+            "trackName": "Aslak Ya Hur",
+            "artistName": "Aharon Amram",
+            "albumName": "Sounds of Yemen (1962–1987)",
+            "trackUri": "spotify:track:10DLcRCqYzODPTca8htCkD"
+          },
+          "addedDate": "2024-08-30"
+        },
+        {
+          "track": {
+            "trackName": "Evo",
+            "artistName": "Dom Salvador & Abolição",
+            "albumName": "Série Samba Soul",
+            "trackUri": "spotify:track:3mDnsrgqKKa5UBhkbkRwaZ"
+          },
+          "addedDate": "2024-08-30"
+        },
+        {
+          "track": {
+            "trackName": "Folia de Reis",
+            "artistName": "Dom Salvador",
+            "albumName": "Série Samba Soul",
+            "trackUri": "spotify:track:1x7H0nz88eM1bOXpuX6rJT"
+          },
+          "addedDate": "2024-08-30"
+        },
+        {
+          "track": {
+            "trackName": "Global Wind Trade",
+            "artistName": "Photay",
+            "albumName": "Windswept",
+            "trackUri": "spotify:track:1mao7FouVSq9yT5HzfWiIJ"
+          },
+          "addedDate": "2024-09-29"
+        },
+        {
+          "track": {
+            "trackName": "Screens",
+            "artistName": "Photay",
+            "albumName": "Onism",
+            "trackUri": "spotify:track:0XzfEziIh6x7eMww4Aqwko"
+          },
+          "addedDate": "2024-09-29"
+        },
+        {
+          "track": {
+            "trackName": "Static At The Summit",
+            "artistName": "Photay",
+            "albumName": "Photay",
+            "trackUri": "spotify:track:5tkFZsYTIilWZLhEZRefeD"
+          },
+          "addedDate": "2024-09-29"
+        },
+        {
+          "track": {
+            "trackName": "Change in Real Time",
+            "artistName": "Photay",
+            "albumName": "Waking Hours",
+            "trackUri": "spotify:track:0h5tDcjC6GBSOtRco6CHHC"
+          },
+          "addedDate": "2024-09-29"
+        },
+        {
+          "track": {
+            "trackName": "Space 2",
+            "artistName": "Nala Sinephro",
+            "albumName": "Space 1.8",
+            "trackUri": "spotify:track:3I6J7zLXCGDwqm0PaNKqWI"
+          },
+          "addedDate": "2024-11-09"
+        },
+        {
+          "track": {
+            "trackName": "Unipvich",
+            "artistName": "Clever Austin",
+            "albumName": "Pareidolia",
+            "trackUri": "spotify:track:1LHNia9C6N7QdI5LyHEVsK"
+          },
+          "addedDate": "2025-10-23"
+        },
+        {
+          "track": {
+            "trackName": "Vocoder",
+            "artistName": "Floating Points",
+            "albumName": "Someone Close",
+            "trackUri": "spotify:track:5a0P7ivbuba3SKGz2ABsNl"
+          },
+          "addedDate": "2022-11-12"
+        },
+        {
+          "track": {
+            "trackName": "A Mother's Lament",
+            "artistName": "Dorian Concept",
+            "albumName": "The Nature of Imitation",
+            "trackUri": "spotify:track:6oJrnFB6mrYzj9C4XOveva"
+          },
+          "addedDate": "2022-11-13"
+        },
+        {
+          "track": {
+            "trackName": "Prayers i",
+            "artistName": "Teebs",
+            "albumName": "Anicca",
+            "trackUri": "spotify:track:37lUeF8Ced9pmr2bOqVCXV"
+          },
+          "addedDate": "2022-11-12"
+        },
+        {
+          "track": {
+            "trackName": "Projection",
+            "artistName": "DjRUM",
+            "albumName": "Forgetting EP",
+            "trackUri": "spotify:track:4GXiEQhEBwcOz6G6B6bXJ1"
+          },
+          "addedDate": "2022-11-13"
+        },
+        {
+          "track": {
+            "trackName": "Pleen 1930's",
+            "artistName": "Clark",
+            "albumName": "Clarence Park",
+            "trackUri": "spotify:track:6JB3LLGPAy6FdWH0w8M4GE"
+          },
+          "addedDate": "2022-11-13"
+        },
+        {
+          "track": {
+            "trackName": "Kyōshū",
+            "artistName": "MEITEI",
+            "albumName": "Kofū",
+            "trackUri": "spotify:track:0bAZVwGZMPwadujHRT9hvH"
+          },
+          "addedDate": "2022-11-13"
+        },
+        {
+          "track": {
+            "trackName": "l8r h8r",
+            "artistName": "Terekke",
+            "albumName": "Improvisational Loops",
+            "trackUri": "spotify:track:77tLlkMyrgvMYb8T9kd7YL"
+          },
+          "addedDate": "2022-11-13"
+        },
+        {
+          "track": {
+            "trackName": "Taiko Time // Sacrifice",
+            "artistName": "Flying Lotus",
+            "albumName": "Yasuke",
+            "trackUri": "spotify:track:26XwZhLVIlePMJV7elmsCw"
+          },
+          "addedDate": "2022-12-11"
+        },
+        {
+          "track": {
+            "trackName": "The Room",
+            "artistName": "Flying Lotus",
+            "albumName": "The Room",
+            "trackUri": "spotify:track:3Xci1c096KD2T1A3rHBGYa"
+          },
+          "addedDate": "2022-12-11"
+        },
+        {
+          "track": {
+            "trackName": "Yoshi Orange",
+            "artistName": "Ebi Soda",
+            "albumName": "Honk If You're Sad",
+            "trackUri": "spotify:track:01NG9DGnXpuVlx1841BAvh"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Yoshi",
+            "artistName": "Beartex",
+            "albumName": "Yoshi",
+            "trackUri": "spotify:track:6eQRNMbAjnEzjKSg7BNAee"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Crawl!",
+            "artistName": "IDLES",
+            "albumName": "CRAWLER",
+            "trackUri": "spotify:track:2zHbgdtai9PfsWnIIN8qzR"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Always Returning - Remastered 2005",
+            "artistName": "Brian Eno",
+            "albumName": "Apollo",
+            "trackUri": "spotify:track:1ps5sx71OhHiBVmGiKQSne"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Dragon In The Mist",
+            "artistName": "Mica Levi",
+            "albumName": "Remain Calm",
+            "trackUri": "spotify:track:2VY8HybPKTSUooQnWRpHW6"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Low Dogg",
+            "artistName": "Micachu & The Shapes",
+            "albumName": "Never",
+            "trackUri": "spotify:track:4YpUPrStxyTKWP5NgxSbVR"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Lips",
+            "artistName": "Micachu & The Shapes",
+            "albumName": "Jewellery",
+            "trackUri": "spotify:track:6EeP0kfDoe9UToFkeMgFH5"
+          },
+          "addedDate": "2022-12-16"
+        },
+        {
+          "track": {
+            "trackName": "Possibility - Slowed Down",
+            "artistName": "Lykke Li",
+            "albumName": "Possibility",
+            "trackUri": "spotify:track:03JlIW3RyZdEJBJgfJBWiF"
+          },
+          "addedDate": "2022-12-20"
+        },
+        {
+          "track": {
+            "trackName": "Hey Brother (Do Unto Others)",
+            "artistName": "The Frightnrs",
+            "albumName": "Nothing More to Say",
+            "trackUri": "spotify:track:22ea2Sa8jVWPWt40MJZFus"
+          },
+          "addedDate": "2023-01-02"
         }
       ],
       "description": null,
       "numberOfFollowers": 0
     },
     {
-      "name": "💻 SFW",
-      "lastModifiedDate": "2026-01-09",
+      "name": "🫠 Soft Collapse",
+      "lastModifiedDate": "2023-11-22",
       "collaborators": [],
       "items": [
         {
           "track": {
-            "trackName": "March 10th, 1876",
-            "artistName": "Photay",
-            "albumName": "On Hold",
-            "trackUri": "spotify:track:6o0g4uyG03fUXifIiABd1W"
+            "trackName": "Melancholia VI",
+            "artistName": "William Basinski",
+            "albumName": "Melancholia",
+            "trackUri": "spotify:track:7HfZJvZMAG5TRecSfLwzZN"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2023-07-02"
+          "addedDate": "2023-11-22"
         },
+        {
+          "track": {
+            "trackName": "Cin",
+            "artistName": "Masayoshi Fujita",
+            "albumName": "Schaum",
+            "trackUri": "spotify:track:1pfpIws99akZNCWuLnO79T"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "N.E.W.",
+            "artistName": "Actress",
+            "albumName": "LAGEOS",
+            "trackUri": "spotify:track:51NtBhVTVSxTUy9bM2UUCg"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Call Me",
+            "artistName": "Gigi Masin",
+            "albumName": "Wind",
+            "trackUri": "spotify:track:3YmZ8V92nqVKx6u1lohFCC"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Enter Exit",
+            "artistName": "Daniel Avery",
+            "albumName": "Illusion Of Time",
+            "trackUri": "spotify:track:0FUkXsUa8gyIUgT2pIkLx3"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "From The Sea/It Looms (Chapters I & II)",
+            "artistName": "Leon Vynehall",
+            "albumName": "Nothing Is Still",
+            "trackUri": "spotify:track:0lDKZO6dS927plsK7SGmh4"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Iniziare",
+            "artistName": "Alessandro Cortini",
+            "albumName": "Iniziare",
+            "trackUri": "spotify:track:4SgUoGv3RlcMF4Vpm0Jp5i"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Hydrochorie",
+            "artistName": "Guillaume Ferran",
+            "albumName": "Jusant (Original Game Soundtrack)",
+            "trackUri": "spotify:track:4B6knduksJoV8qmhbUqhD6"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "retire (final)",
+            "artistName": "Alvedon",
+            "albumName": "hurry up mixtape",
+            "trackUri": "spotify:track:1hwX5UMu9aUV44INM8GdPv"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Uncertain Instruction",
+            "artistName": "K. Leimer",
+            "albumName": "Irrational Overcast",
+            "trackUri": "spotify:track:4UTAaPcuUUbNz7LoKE6f5X"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Touch me & die",
+            "artistName": "Kara-Lis Coverdale",
+            "albumName": "Aftertouches",
+            "trackUri": "spotify:track:4fUyRdOqocwHCabG7gT71J"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "#20",
+            "artistName": "Aphex Twin",
+            "albumName": "Selected Ambient Works Volume II",
+            "trackUri": "spotify:track:0Pg0frSTti7d8Ck1OmOYkz"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "Ultra Marine",
+            "artistName": "Sweatson Klank",
+            "albumName": "Ultra Marine",
+            "trackUri": "spotify:track:6G9LFyviMIEEXwRKTeAD1s"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "ME",
+            "artistName": "Felicia Atkinson",
+            "albumName": "Comme Un Seul Narcisse",
+            "trackUri": "spotify:track:2d7FoK7amJiLOk6S0IT8AS"
+          },
+          "addedDate": "2023-11-22"
+        },
+        {
+          "track": {
+            "trackName": "unother",
+            "artistName": "Terekke",
+            "albumName": "Improvisational Loops",
+            "trackUri": "spotify:track:363mTP8zzRAr36wlbcdHRP"
+          },
+          "addedDate": "2023-11-22"
+        }
+      ],
+      "description": null,
+      "numberOfFollowers": 0
+    },
+    {
+      "name": "🫧 SFW",
+      "lastModifiedDate": "2026-01-09",
+      "collaborators": [],
+      "items": [
         {
           "track": {
             "trackName": "myloveilove",
@@ -177,9 +804,6 @@
             "albumName": "myloveilove",
             "trackUri": "spotify:track:43mQOs2HsT3tCIcOLCZT6m"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -189,21 +813,6 @@
             "albumName": "Thinking Of You",
             "trackUri": "spotify:track:7fZyvqMiAR2Mvuys7ehQPD"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2023-08-05"
-        },
-        {
-          "track": {
-            "trackName": "Out",
-            "artistName": "Dorian Concept",
-            "albumName": "What We Do For Others",
-            "trackUri": "spotify:track:3XacRs7DmGzAb8auxz6Wnt"
-          },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -213,9 +822,6 @@
             "albumName": "To Believe (Remixes)",
             "trackUri": "spotify:track:0G4qhEvM5DpcaRk5IHnwHM"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -225,9 +831,6 @@
             "albumName": "Music Has The Right To Children",
             "trackUri": "spotify:track:55IsBrXUfZUmY7KSm2BjUp"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -237,9 +840,6 @@
             "albumName": "Quaristice",
             "trackUri": "spotify:track:0uqSV2Q6vvlxhqd1Go0tMh"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -249,9 +849,6 @@
             "albumName": "What We Do For Others",
             "trackUri": "spotify:track:2SRwPT8GNjoaoEwoZvcD7W"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -261,9 +858,6 @@
             "albumName": "Anicca",
             "trackUri": "spotify:track:5GkmYAsDo9mWAEBrxfQo5j"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -273,21 +867,6 @@
             "albumName": "Remain Calm",
             "trackUri": "spotify:track:1yqnFaOPxYdqh4BqSbbFw9"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2023-08-05"
-        },
-        {
-          "track": {
-            "trackName": "Nanou2",
-            "artistName": "Aphex Twin",
-            "albumName": "Drukqs",
-            "trackUri": "spotify:track:6Wei2NUSG66WzLiqSuQAy5"
-          },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -297,9 +876,6 @@
             "albumName": "The Nature of Imitation",
             "trackUri": "spotify:track:6oJrnFB6mrYzj9C4XOveva"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -309,21 +885,6 @@
             "albumName": "Forgetting EP",
             "trackUri": "spotify:track:4GXiEQhEBwcOz6G6B6bXJ1"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2023-08-05"
-        },
-        {
-          "track": {
-            "trackName": "When I See Scissors I Can't Help But Think of You",
-            "artistName": "The Dead Texan",
-            "albumName": "The Dead Texan",
-            "trackUri": "spotify:track:3xjhSs614NqALivarSVYhV"
-          },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -333,9 +894,6 @@
             "albumName": "Reassemblage",
             "trackUri": "spotify:track:5Uze3DWsfe4DWEIe2KQqBN"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -345,9 +903,6 @@
             "albumName": "The Dead Texan",
             "trackUri": "spotify:track:2qvXaAyYLBo6PaP85cb1Xn"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -357,9 +912,6 @@
             "albumName": "Selected Ambient Works Volume II",
             "trackUri": "spotify:track:2Bc4llhjJBW77I552RgA3L"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -369,21 +921,6 @@
             "albumName": "For Those Of You Who Have Never (And Also Those Who Have)",
             "trackUri": "spotify:track:3nV0xRo04d5QHn0hpvJIBF"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2023-08-05"
-        },
-        {
-          "track": {
-            "trackName": "Requiem for CS70 and Strings",
-            "artistName": "Floating Points",
-            "albumName": "Crush",
-            "trackUri": "spotify:track:5tJZSE0l9xTnRrccjBZZXg"
-          },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -393,9 +930,6 @@
             "albumName": "On A Clear Day I Can See You Forever",
             "trackUri": "spotify:track:27mtsbKnbBvCJ4y2R21u26"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -405,9 +939,6 @@
             "albumName": "Crush",
             "trackUri": "spotify:track:3rkJH9BaiCWpRY718WTkBP"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -417,9 +948,6 @@
             "albumName": "Patterns Of Consciousness",
             "trackUri": "spotify:track:3AFGqSmaHEOYZlNVqAjPo7"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -429,9 +957,6 @@
             "albumName": "Unreleased Mass, Pt. 2",
             "trackUri": "spotify:track:0NLptXt4x4rlU6v28KPmKx"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -441,9 +966,6 @@
             "albumName": "Drukqs",
             "trackUri": "spotify:track:7vuYfz0siJY66fLEiDKnEh"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -453,9 +975,6 @@
             "albumName": "FRKWYS Vol. 15: serenitatem",
             "trackUri": "spotify:track:7oeoPQWwvxCSvJP3YFOhpz"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -465,9 +984,6 @@
             "albumName": "The Deep End",
             "trackUri": "spotify:track:5yTYVsQPA7ujLOANcjdDTW"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -477,9 +993,6 @@
             "albumName": "Radial",
             "trackUri": "spotify:track:5YB0bqHv7rDYhkzIW8VQmq"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -489,9 +1002,6 @@
             "albumName": "On Hold",
             "trackUri": "spotify:track:5o5Sg5yIKrFE7cTeq43am1"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -501,9 +1011,6 @@
             "albumName": "Mi Media Naranja",
             "trackUri": "spotify:track:799Rn8baGwbIwllfDw2yl6"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -513,21 +1020,6 @@
             "albumName": "Nothing Is Still",
             "trackUri": "spotify:track:0y74fR4rvN0GN0pNYJeyme"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2023-08-05"
-        },
-        {
-          "track": {
-            "trackName": "It Breaks (Chapter IX)",
-            "artistName": "Leon Vynehall",
-            "albumName": "Nothing Is Still",
-            "trackUri": "spotify:track:0y74fR4rvN0GN0pNYJeyme"
-          },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -537,9 +1029,6 @@
             "albumName": "From Here We Go Sublime",
             "trackUri": "spotify:track:50GjiqApQrBUcYs4EYpMfz"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-05"
         },
         {
@@ -549,10 +1038,16 @@
             "albumName": "yes/and",
             "trackUri": "spotify:track:3IGgwFrcEiqaTw3w5fyAIR"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2023-08-06"
+        },
+        {
+          "track": {
+            "trackName": "Blue In Green",
+            "artistName": "The Vernon Spring",
+            "albumName": "A Plane Over Woods",
+            "trackUri": "spotify:track:50LaXTjbu9n2eNQw01ggqa"
+          },
+          "addedDate": "2024-05-16"
         },
         {
           "track": {
@@ -561,9 +1056,6 @@
             "albumName": "K We're Here",
             "trackUri": "spotify:track:5Nhwbr0uKvKXS6QkpWXJVM"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2025-11-12"
         },
         {
@@ -573,9 +1065,6 @@
             "albumName": "You Win Some, You Lose A Lot",
             "trackUri": "spotify:track:3fshdQ1ut7gqDAjUurH1js"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2025-11-12"
         },
         {
@@ -585,9 +1074,6 @@
             "albumName": "Cherry Blue",
             "trackUri": "spotify:track:2AiwrzloLNqNNyyo9tddVK"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2025-11-12"
         },
         {
@@ -597,21 +1083,6 @@
             "albumName": "Space 1.8",
             "trackUri": "spotify:track:5xYR2G6YOEzX2X9asFUrOE"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
-          "addedDate": "2026-01-06"
-        },
-        {
-          "track": {
-            "trackName": "From The Sea/It Looms (Chapters I & II)",
-            "artistName": "Leon Vynehall",
-            "albumName": "Nothing Is Still",
-            "trackUri": "spotify:track:0lDKZO6dS927plsK7SGmh4"
-          },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2026-01-06"
         },
         {
@@ -621,9 +1092,6 @@
             "albumName": "Here It Comes Again",
             "trackUri": "spotify:track:1vslEs3SvzfApWYvMXTgWr"
           },
-          "episode": null,
-          "audiobook": null,
-          "localTrack": null,
           "addedDate": "2026-01-09"
         }
       ],
