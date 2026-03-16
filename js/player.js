@@ -140,7 +140,7 @@ function stopProgressLoop() {
 
 function showBar() {
   $.bar.style.display = "";
-  document.documentElement.style.setProperty("--player-h", "calc(7 * var(--unit))");
+  document.documentElement.style.setProperty("--player-h", "calc(9 * var(--unit))");
 }
 
 function hideBar() {
