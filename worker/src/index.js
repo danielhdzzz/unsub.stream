@@ -129,7 +129,7 @@ async function lastfmPost(params, env) {
 
 // ── Route handlers ──
 
-const CACHE_TTL = 60 * 60 * 24 * 90; // 90 days
+const CACHE_TTL = 60 * 60 * 24 * 365; // 1 year
 
 function normalizeQuery(q) {
   return q
